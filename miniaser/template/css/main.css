@@ -1,0 +1,465 @@
+/*----Reset defaul styles----*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*----Reset defaul styles end----*/
+html {
+	height: 100%;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+	display: block;
+}
+body {
+	font-size: 10pt;
+    font-family: "Noto Sans", "Noto Sans UI", 'Roboto Condensed', Arial, Helvetica, sans-serif;
+    color: #000;
+	height: 100%;
+}
+.wrapper {
+	min-width: 800px; 
+	max-width: 1600px; 
+	margin: 0 auto;
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+}
+.header {
+	height: 220px;
+	background: #fff;
+}
+.shapka {
+	width: 95%;
+	min-width: 950px;
+	display: block;
+	position: relative;
+	margin-right: auto;
+	margin-left: auto;
+	height: 140px;
+}
+
+.shapka .logo {
+    float: left;
+    display: block;
+    width: 180px;
+    height: 110px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    margin-right: 20px;
+}
+.shapka .logo_name {
+    float: left;
+    display: block;
+    width: 400px;
+    margin-top: 40px;
+    margin-right: 50px;
+    overflow: hidden;
+}
+.shapka .logo_name_info {
+    display: block;
+    font-size: 9pt;
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+}
+.shapka .logo_name_name a {
+	width: 320px;
+    display: block;
+    font-size: 22pt;
+    color: #0765b3;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+.shapka .logo_name_name a:hover {
+    color: #D00;
+    text-decoration: underline;
+}
+.shapka .logo_name_adress {
+    display: block;
+    font-size: 10pt;
+    color: #000;
+    text-decoration: none;
+}
+.shapka .contact {
+    width: 180px;
+    float: right;
+    margin-top: 30px;
+    text-decoration: none;
+    color: #000;
+    text-align: right;
+    margin-right: 20px;
+	border-bottom: 3px solid #0765b3;
+}
+.shapka .contact_tel {
+float: left;
+    font-size: 12pt;
+    margin-top: 5px;
+    font-weight: bold;
+    color: #000;
+    height: 20px;
+    display: inline-block;
+    vertical-align: top;
+}
+.shapka .contact_icon_tel {
+    height: 17px;
+    width: 30px;
+    display: inline-block;
+    vertical-align: top;
+    text-align: left;
+}
+.shapka .contact_email {
+	float: left;
+    font-size: 10.5pt;
+    font-weight: bold;
+    margin-top: 5px;
+    color: #000;
+    height: 20px;
+    text-decoration: none;
+    display: inline-block;
+    vertical-align: top;
+}
+.shapka .contact_icon_email {
+    height: 14px;
+    width: 30px;
+    /*padding-top: 6px;*/
+    display: inline-block;
+    vertical-align: top;
+    text-align: left;
+}
+.shapka a {
+    color: #000;
+    text-decoration: none;
+}
+.line1 {
+    background-color: #0765b3;
+    width: 100%;
+    min-width: 1000px;
+    height: 8px;
+}
+.line2 {
+    background-color: #0765b3;
+	margin-bottom: 3px;
+    height: 5px;
+    width: 100%;
+}
+/*nav start*/
+.nav li {
+    display: table-cell;
+    float: none;
+}
+.nav_list {
+    display: table;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+/*submenu start*/
+.auto_sublist {
+    width: inherit;
+    display: none;
+	  position: absolute;
+	  z-index: 999;
+}
+.auto_sublist .auto_sublist {
+  width: 160px;
+    display: none;	
+	  position: absolute;
+	  z-index: 1000;
+    left: 100%;
+	margin-left: 2px;
+    top: -1px;
+}
+nav li:hover > .auto_sublist {display: block;}
+
+.auto_sublist li{
+    display: block;
+    position: relative;
+	  padding: 2px 0;
+	  border: 1px solid #FFF;
+}
+.auto_sublist a{
+   	color: #FFF;
+	  font-size: 10pt;
+	  display: block;
+    background: #0765B3;
+    text-decoration: none;
+    text-align: center;
+   	padding: 10px 16px;
+}
+.auto_sublist a:hover{
+    background: #2B9BF7;
+}
+/*submenu end*/
+
+a.normal  {
+    display: block;
+    background: #0765B3;
+    font-size: 14pt;
+    color: #FFF;
+    text-decoration: none;
+    text-align: center;
+    margin: 0 0.5px;
+   	padding: 10px 16px;
+}
+a.active {
+    display: block;
+    background: #2B9BF7;
+    font-size: 14pt;
+    color: #FFF;
+    text-decoration: none;
+    text-align: center;
+    margin: 0 0.5px;
+   	padding: 10px 16px;
+}
+a.normal:hover{
+    background: #2B9BF7;
+}
+a.active:hover{
+    background: #0A88EF;
+}
+/*nav end*/
+/*All page start*/
+.middle {
+	min-height: 740px;
+	margin-top: 20px;
+	padding: 0 0 100px;
+	position: relative;
+	width: 100%;
+}
+.middle:after {
+	display: table;
+	clear: both;
+	content: '';
+}
+/*Content conteiner*/
+.container {
+	width: 100%;
+	float: left;
+	overflow: hidden;
+}
+/*Content start*/
+.content {
+	padding-left: 300px;
+	margin: 15px;
+}
+/*Content end*/
+/*Left slider start*/
+.left-sidebar {
+	float: left;
+	width: 280px;
+	margin-left: -100%;
+	position: relative;
+}
+
+.left {
+    float: left;
+    width: 250px;
+    margin: 15px;
+    margin-bottom: 20px;
+}
+.left_block {
+    width: 250px;
+    margin-bottom: 40px;
+}
+.left_block a{
+    font-size: 12pt;
+    color: #FFF;
+    text-decoration: none;
+    width: 230px;
+    text-align: left;
+    display: block;
+    padding: 10px;
+    margin-bottom: 5px;}
+.left_normal a {background-color: #0765B3;}
+.left_active a {background-color: #2B9BF7;}
+.left_normal a:hover {background-color: #2B9BF7;}
+.left_active a:hover {background: #0A88EF;}
+.left_banner_box{
+	width: 250px;
+	background-color: #0765B3;
+}
+.left_banner_box img:first-child{
+	margin-bottom: 0;
+}
+.left_banner{
+	width: 230px;
+	margin: 10px;
+}
+/*Left slider end*/
+/*All page end*/
+
+/*Footer start*/
+.footer {
+	margin: -140px auto 0 auto;
+	min-width: 800px;
+	max-width: 1600px;
+	height: 140px;
+	background: #BFF08E;
+	position: relative;
+
+    background-image: url(../img/bg_footer.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+div.podval {
+	width: 95%;
+	min-width: 800px;
+	display: block;
+	position: relative;
+	margin: 0 auto;
+	margin-right: auto;
+	margin-left: auto;
+	height: 140px;
+}
+.podval .logo {
+    float: left;
+    display: block;
+    width: 180px;
+    height: 110px;
+	
+    margin-top: 15px;
+    margin-right: 20px;
+	
+	
+}
+.podval .logo_name {
+    float: left;
+    display: block;
+    width: 320px;
+    margin-top: 25px;
+    margin-right: 10px;
+    overflow: hidden;
+}
+.podval .logo_name_info {
+
+    display: block;
+    font-size: 9pt;
+    color: #FFF;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+}
+.podval .logo_name_name a {
+	
+    display: block;
+    font-size: 22pt;
+    color: #FFF;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+.podval .logo_name_name a:hover {
+    color: #D00;
+    text-decoration: underline;
+}
+.podval .logo_name_adress {
+    display: block;
+    font-size: 10pt;
+    color: #FFF;
+    text-decoration: none;
+}
+.podval .contact {
+    width: 180px;
+    float: right;
+    margin-top: 20px;
+    text-decoration: none;
+    color: #FFF;
+    text-align: right;
+    margin-right: 20px;
+	border-bottom: 3px solid #FFF;
+}
+.podval .contact_tel {
+float: left;
+    font-size: 12pt;
+    margin-top: 5px;
+    font-weight: bold;
+    color: #FFF;
+    height: 20px;
+    display: inline-block;
+    vertical-align: top;
+}
+.podval .contact_icon_tel {
+    height: 17px;
+    width: 30px;
+    display: inline-block;
+    vertical-align: top;
+    text-align: left;
+}
+.podval .contact_email {
+	float: left;
+    font-size: 10.5pt;
+    font-weight: bold;
+    margin-top: 5px;
+    color: #FFF;
+    height: 20px;
+    text-decoration: none;
+    display: inline-block;
+    vertical-align: top;
+}
+.podval .contact_icon_email {
+    height: 14px;
+    width: 30px;
+    /*padding-top: 6px;*/
+    display: inline-block;
+    vertical-align: top;
+    text-align: left;
+}
+.podval a {
+    color: #FFF;
+    text-decoration: none;
+}
+.footer .line {
+    background-color: #FFF;
+	height: 10px;
+	width: 100%;
+	border-radius: 0 0 10px 10px;
+}
+/*Footer end*/
+/*Adaptate media start*/
+
+
+/*Adaptate media end*/
