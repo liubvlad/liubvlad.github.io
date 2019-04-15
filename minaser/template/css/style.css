@@ -55,7 +55,7 @@ body {
 	height: 100%;
 }
 .wrapper {
-	min-width: 800px; 
+	min-width: 1000px; 
 	max-width: 1600px; 
 	margin: 0 auto;
 	min-height: 100%;
@@ -63,12 +63,13 @@ body {
 	height: 100%;
 }
 .header {
+	min-width: 1000px;
 	height: 220px;
 	background: #fff;
 }
 .shapka {
 	width: 95%;
-	min-width: 950px;
+	min-width: 1000px;
 	display: block;
 	position: relative;
 	margin-right: auto;
@@ -217,7 +218,7 @@ nav li:hover > .auto_sublist {display: block;}
     display: block;
     position: relative;
 	  padding: 2px 0;
-	  border: 1px solid #FFF;
+	  border: 1px solid rgba(255, 255, 255, 0);
 }
 .auto_sublist a{
    	color: #FFF;
@@ -332,8 +333,8 @@ a.active:hover{
 
 /*Footer start*/
 .footer {
-	margin: -140px auto 0 auto;
-	min-width: 800px;
+	margin: -100px auto 0 auto;
+	min-width: 1000px;
 	max-width: 1600px;
 	height: 140px;
 	background: #BFF08E;
