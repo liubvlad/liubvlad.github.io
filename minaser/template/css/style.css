@@ -25,6 +25,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+	min-width: 1000px;
 }
 ol, ul {
 	list-style: none;
@@ -53,6 +54,7 @@ body {
     font-family: "Noto Sans", "Noto Sans UI", 'Roboto Condensed', Arial, Helvetica, sans-serif;
     color: #000;
 	height: 100%;
+	background: url('../img/bg.jpg');
 }
 .wrapper {
 	min-width: 1000px; 
@@ -61,6 +63,7 @@ body {
 	min-height: 100%;
 	height: auto !important;
 	height: 100%;
+	background: white;
 }
 .header {
 	min-width: 1000px;
@@ -283,7 +286,7 @@ a.active:hover{
 /*Content start*/
 .content {
 	padding-left: 300px;
-	margin: 15px;
+	margin: 15px 15px 30px 15px;
 }
 /*Content end*/
 /*Left slider start*/
@@ -337,7 +340,7 @@ a.active:hover{
 	min-width: 1000px;
 	max-width: 1600px;
 	height: 140px;
-	background: #BFF08E;
+	background: #0765b3;
 	position: relative;
 
     background-image: url(../img/bg_footer.jpg);
@@ -461,6 +464,63 @@ float: left;
 }
 /*Footer end*/
 /*Adaptate media start*/
+@media all and (max-width: 1024px) {  
+	/*.left-sidebar {
+		display: none;
+	}*/
+	.container {
+	float: none;
+	}
+	/*Content start*/
+	.content {
+	padding-left: 0px;
+	}
+	.shapka .contact, .shapka .logo_name_adress, .podval .logo_name_info{
+		display: none;
+	}
+	.shapka .logo_name, .podval .logo_name{
+		width: 500px;
+		margin-top: 40px;
+	}
+	
+	/*Left slider start*/
+	.left-sidebar {
+		float: none;
+		width: 100%;
+		margin-left: 0;
+		position: static;
+	}
 
+	.left {
+		float: none;
+		width: 40%;
+	}
+	.left_block {
+		width: 100%;
+		margin-bottom: 40px;
+	}
+	.left_block a{
+		font-size: 10pt;
+		width: 100%;
+		padding: 20px;
+		margin-bottom: 5px;
+		font-size: 16pt;
+	}
+	.left_banner_box{
+		float: right;
+		width: 60%;
+		background-color: #0765B3;
+	}
+	.left_banner_box img:first-child{
+		margin-bottom: 0;
+	}
+	.left_banner{
+		width: 40%;
+		margin: 10px;
+	}
+	/*Left slider end*/
+	
+	
+}
 
 /*Adaptate media end*/
