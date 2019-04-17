@@ -25,7 +25,6 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
-	min-width: 1000px;
 }
 ol, ul {
 	list-style: none;
@@ -54,10 +53,10 @@ body {
     font-family: "Noto Sans", "Noto Sans UI", 'Roboto Condensed', Arial, Helvetica, sans-serif;
     color: #000;
 	height: 100%;
-	background: url('../img/bg.jpg');
+	/*background: url('../img/bg.jpg');*/
 }
 .wrapper {
-	min-width: 1000px; 
+	min-width: 1024px; 
 	max-width: 1600px; 
 	margin: 0 auto;
 	min-height: 100%;
@@ -66,13 +65,13 @@ body {
 	background: white;
 }
 .header {
-	min-width: 1000px;
+	min-width: 1024px;
 	height: 220px;
 	background: #fff;
 }
 .shapka {
 	width: 95%;
-	min-width: 1000px;
+	min-width: 1024px;
 	display: block;
 	position: relative;
 	margin-right: auto;
@@ -180,15 +179,16 @@ float: left;
 .line1 {
     background-color: #0765b3;
     width: 100%;
-    min-width: 1000px;
+    min-width: 1024px;
     height: 8px;
 }
 .line2 {
     background-color: #0765b3;
 	margin-bottom: 3px;
     height: 5px;
+	min-width: 1024px;
     width: 100%;
-	min-width: 1000px;
+
 }
 /*nav start*/
 .nav li {
@@ -344,7 +344,7 @@ a.active:hover{
 /*Footer start*/
 .footer {
 	margin: -100px auto 0 auto;
-	min-width: 1000px;
+	min-width: 1024px;
 	max-width: 1600px;
 	height: 140px;
 	background: #0765b3;
@@ -407,12 +407,6 @@ div.podval {
     color: #D00;
     text-decoration: underline;
 }
-.podval .logo_name_adress {
-    display: block;
-    font-size: 10pt;
-    color: #FFF;
-    text-decoration: none;
-}
 .podval .contact {
     width: 180px;
     float: right;
@@ -459,6 +453,12 @@ float: left;
     vertical-align: top;
     text-align: left;
 }
+.podval .contact_adress {
+    display: block;
+    font-size: 10pt;
+    color: #FFF;
+    text-decoration: none;
+}
 .podval a {
     color: #FFF;
     text-decoration: none;
@@ -472,17 +472,20 @@ float: left;
 /*Footer end*/
 /*Adaptate media start*/
 @media all and (max-width: 1024px) {  
+body{
+	min-width: 100%;
+}
 	.wrapper {
-		min-width: 0; 
+		min-width: 100%; 
 	}
 	.header {
-		min-width: 0;
+		min-width: 100%;
 		height: 450px;
 	}
 	/*shapka start*/
 	.shapka {
 		width: 100%;
-		min-width: 0;
+		min-width: 100%;
 
 		height: 240px;
 	}
@@ -491,18 +494,19 @@ float: left;
 		display: block;
 		width: 30%;
 		height: 220px;
-		margin: 15px 10px 5px 15px;
+		margin: 15px 35px 5px 10px;
 		/*margin-top: 15px;
 		margin-bottom: 10px;
 		margin-right: 20px;*/
 	}
 	.shapka .logo img{
-		width: 90%;
-		height: 95%;
+		width: 250px;
+		height: 200px;
 	}
 	.shapka .logo_name{
 		width: 60%;
 		margin-top: 6%;
+		margin-right: 0;
 	}
 	.shapka .logo_name_info {
 		width: 100%;
@@ -697,7 +701,7 @@ float: left;
 	/*Footer start*/
 	.footer {
 		margin: -100px auto 0 auto;
-		min-width: 0;
+		min-width: 100%;
 		height: 220px;
 
 	}
@@ -723,7 +727,7 @@ float: left;
 	.podval .logo_name {
 		float: left;
 		display: block;
-		width: 45%;
+		width: 150px;
 		margin-top: 60px;
 		/*margin-right: 10px;*/
 		overflow: hidden;
@@ -733,12 +737,17 @@ float: left;
 	}
 	
 	.podval .logo_name_name a {
-		font-size: 28pt;
+		font-size: 26pt;
+		text-align: center;
+		width: 150px;
 		margin-bottom: 15px;
 	}
 	
 	.podval .logo_name_adress {
+		display: absolute;
+		width: 250px;
 		font-size: 16pt;
+		z-index: 50;
 	}
 	
 	.podval .contact {
