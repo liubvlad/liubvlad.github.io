@@ -53,7 +53,7 @@ body {
     font-family: "Noto Sans", "Noto Sans UI", 'Roboto Condensed', Arial, Helvetica, sans-serif;
     color: #000;
 	height: 100%;
-	/*background: url('../img/bg.jpg');*/
+	background: url('../img/bg.jpg');
 }
 .wrapper {
 	min-width: 1024px; 
@@ -472,21 +472,12 @@ float: left;
 /*Footer end*/
 /*Adaptate media start*/
 @media all and (max-width: 1024px) {  
-body{
-	min-width: 100%;
-}
-	.wrapper {
-		min-width: 100%; 
-	}
 	.header {
-		min-width: 100%;
-		height: 450px;
+		height: auto;
 	}
 	/*shapka start*/
 	.shapka {
 		width: 100%;
-		min-width: 100%;
-
 		height: 240px;
 	}
 	.shapka .logo {
@@ -495,9 +486,6 @@ body{
 		width: 30%;
 		height: 220px;
 		margin: 15px 35px 5px 10px;
-		/*margin-top: 15px;
-		margin-bottom: 10px;
-		margin-right: 20px;*/
 	}
 	.shapka .logo img{
 		width: 250px;
@@ -523,16 +511,17 @@ body{
 		display: none;
 	}
 	.line1 {
-		min-width: 0;
+		/*min-width: 0;*/
 		height: 10px;
 	}
 	.line2 {
 		height: 7px;
-		min-width: 0;
+		/*min-width: 0;*/
 	}
 	/*shapka end*/
 	/*nav start*/
 	/*three in a row*/
+
 	.nav > ul {
 	  display: flex;
 	  flex-wrap: wrap;
@@ -701,13 +690,11 @@ body{
 	/*Footer start*/
 	.footer {
 		margin: -100px auto 0 auto;
-		min-width: 100%;
 		height: 220px;
 
 	}
 	div.podval {
 		width: 95%;
-		min-width: 0;
 		height: 220px;
 	}
 	.podval .logo {
