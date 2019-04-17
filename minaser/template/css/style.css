@@ -539,9 +539,9 @@ body{
 
 	.nav > ul > li {
 	  text-align: center;
-	  padding: 10px 5px;
+	  /*padding: 10px 0;*/
 	  list-style: none;
-	  flex: 0 0 33.33%;
+	  flex: 0 0 33%;
 	}
 	/********/
 	.nav > li {

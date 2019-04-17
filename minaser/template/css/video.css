@@ -1,0 +1,18 @@
+.galery{
+	display: flex;
+	justify-content: center;	
+}
+.galery_list{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	text-align: center;
+	flex-wrap: wrap;
+	height: 100%;
+}
+
+iframe{
+	width: 30%;
+	height: 100%;
+	margin: 1.5%;
+}
