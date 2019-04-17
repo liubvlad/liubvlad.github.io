@@ -332,11 +332,14 @@ a.active:hover{
 	width: 250px;
 	background-color: #0765B3;
 }
-.left_box img{
+.left_ban_box{
+	width: 250px;
+}
+.left_ban_box img{
 	width: 230px;
 	margin: 10px;
 }
-.left_box img:first-child{
+.left_ban_box img:first-child{
 	margin-bottom: 0;
 }
 /*Left slider end*/
