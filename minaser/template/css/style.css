@@ -536,7 +536,7 @@ body{
 
 	.nav > ul > li {
 	  text-align: center;
-	  padding: 10px 5;
+	  padding: 10px 5px;
 	  list-style: none;
 	  flex: 0 0 33.33%;
 	}
@@ -741,13 +741,6 @@ body{
 		text-align: center;
 		width: 150px;
 		margin-bottom: 15px;
-	}
-	
-	.podval .logo_name_adress {
-		display: absolute;
-		width: 250px;
-		font-size: 16pt;
-		z-index: 50;
 	}
 	
 	.podval .contact {
