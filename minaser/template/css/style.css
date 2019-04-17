@@ -49,6 +49,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, 
 	display: block;
 }
 body {
+	
 	font-size: 10pt;
     font-family: "Noto Sans", "Noto Sans UI", 'Roboto Condensed', Arial, Helvetica, sans-serif;
     color: #000;
@@ -58,8 +59,7 @@ body {
 .wrapper {
 	min-width: 1024px; 
 	max-width: 1600px; 
-	margin: 0 0;
-	width: 100%;
+	margin: 0 auto;
 	min-height: 100%;
 	height: auto !important;
 	height: 100%;
@@ -464,21 +464,24 @@ float: left;
     color: #FFF;
     text-decoration: none;
 }
-.footer .line {
-    background-color: #FFF;
-	height: 10px;
-	width: 100%;
-	border-radius: 0 0 10px 10px;
-}
 /*Footer end*/
 /*Adaptate media start*/
 @media all and (max-width: 1024px) {  
+body{
+	min-width: 768px;
+}
+	.wrapper {
+		min-width: 100%; 
+	}
 	.header {
-		height: auto;
+		min-width: 100%;
+		height: 450px;
 	}
 	/*shapka start*/
 	.shapka {
 		width: 100%;
+		min-width: 100%;
+
 		height: 240px;
 	}
 	.shapka .logo {
@@ -487,6 +490,9 @@ float: left;
 		width: 30%;
 		height: 220px;
 		margin: 15px 35px 5px 10px;
+		/*margin-top: 15px;
+		margin-bottom: 10px;
+		margin-right: 20px;*/
 	}
 	.shapka .logo img{
 		width: 250px;
@@ -512,17 +518,16 @@ float: left;
 		display: none;
 	}
 	.line1 {
-		/*min-width: 0;*/
+		min-width: 0;
 		height: 10px;
 	}
 	.line2 {
 		height: 7px;
-		/*min-width: 0;*/
+		min-width: 0;
 	}
 	/*shapka end*/
 	/*nav start*/
 	/*three in a row*/
-
 	.nav > ul {
 	  display: flex;
 	  flex-wrap: wrap;
@@ -551,7 +556,7 @@ float: left;
 	}
 	/*submenu start*/
 	.auto_sublist {
-		width: 33%;
+		width: 32.8%;
 		margin-left: 5px;
 		display: none;
 		position: static;
@@ -561,11 +566,13 @@ float: left;
 		position: absolute;
 	}
 	.auto_sublist .auto_sublist {
-		width: 98%;
+		width: 96%;
 		display: none;	
 		position: static;
 		z-index: 100;
-		margin-left: 2px;
+		margin-left: auto;
+		margin-right: auto;
+		color: #e5e;
 	}
 	nav li:hover > .auto_sublist {display: block;}
 	.auto_sublist li{
@@ -622,8 +629,8 @@ float: left;
 
 	.left {
 		float: none;
-		width: 100%;
-		margin: 15px;
+		width: 98%;
+		margin: 1%;
 		margin-bottom: 20px;
 	}
 	.left_block {
@@ -656,6 +663,9 @@ float: left;
 		background-color: rgba(0, 0, 0, 0);
 		margin-left: 0;
 		position: relative;
+	}
+	div.left_box{
+		width: 50%;
 	}
 	.left_box img{
 		width: 92%;
@@ -691,11 +701,13 @@ float: left;
 	/*Footer start*/
 	.footer {
 		margin: -100px auto 0 auto;
+		min-width: 100%;
 		height: 220px;
 
 	}
 	div.podval {
 		width: 95%;
+		min-width: 0;
 		height: 220px;
 	}
 	.podval .logo {

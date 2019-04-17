@@ -1,9 +1,14 @@
 div.all{
 	margin-bottom: 50px;
 }
+.text{
+	padding: 0 15px;
+}
 audio{
-	width: 440px;
-
+	width: 70%;
+	margin-left: 14%;
+	margin-top: 40px;
+	transform: scale(1.4); 
 	padding-left: 10px;;
 }
 #slider { /*положение слайдера*/
@@ -147,8 +152,38 @@ p{
 		margin: -90px 0 0;
 	}
 	audio{
-		width: 90%;
-		margin-top: 30px;
-		margin-left: 30px;
+		width: 60%;
+		margin-top: 3%;
+		margin-left: 10%;
+		transform: scale(1.2); 
 	}
+	
+	/*настройка переключения и положения для левой стрелки*/
+/*если свич1-5 активны, то идет обращение к лейблу из блока с id контролс*/
+#switch1:checked ~ #controls label:nth-child(5), 
+#switch2:checked ~ #controls label:nth-child(1),
+#switch3:checked ~ #controls label:nth-child(2),
+#switch4:checked ~ #controls label:nth-child(3),
+#switch5:checked ~ #controls label:nth-child(4){
+	background: url('../img/slider/prev.jpg') no-repeat; /*заливка фона картинкой без повторений*/
+	float: left;
+	margin: -35% 0 0 0px; /*сдвиг влево*/
+	display: block;
+	height: 120px;
+	width: 50px;
+}
+
+/*настройка переключения и положения для правой стрелки*/
+#switch1:checked ~ #controls label:nth-child(2), 
+#switch2:checked ~ #controls label:nth-child(3),
+#switch3:checked ~ #controls label:nth-child(4),
+#switch4:checked ~ #controls label:nth-child(5),
+#switch5:checked ~ #controls label:nth-child(1){
+	background: url('../img/slider/next.jpg') no-repeat; /*заливка фона картинкой без повторений*/
+	float: right;
+	margin: -35% 0 0 0; /*сдвиг вправо*/
+	display: block;
+	height: 120px;
+	width: 50px;
+}
 }
