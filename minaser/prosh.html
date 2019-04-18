@@ -1,18 +1,16 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-
 	<meta charset="utf-8" />
-	<title>МиниАвтоСервис - Главная</title>
+	<title>МиниАвтоСервис - Прошивки</title>
 	<meta content="width=1024" name="viewport" id="viewport">
 	<meta name="keywords" content="" />
 	<meta name="description" content="" />
 	<link href="template/css/style.css" rel="stylesheet">
-	<link href="template/css/index.css" rel="stylesheet">
+	<link href="template/css/prosh.css" rel="stylesheet">
 </head>
 
 <body>
-
 <div class="wrapper">
 	<header class="header">
 		<div class="line1"></div>
@@ -43,10 +41,10 @@
         <div class="line2"></div>
 		<nav class="nav">
           	<ul class="nav_list">        
-                <li><a class="active" href="index.html">Главная</a></li>
+                <li><a class="normal" href="index.html">Главная</a></li>
                 <li><a class="normal" href="about.html">О нас</a></li>
                 <li><a class="normal" href="services.html">Услуги</a></li>
-                <li><a class="normal" href="prosh.html">Прошивки</a></li>
+                <li><a class="active" href="prosh.html">Прошивки</a></li>
                 <li><a class="normal" href="programms.html">Программы</a></li>
                 <li class="auto"><a href="auto.html" class="normal">Автомобили</a>
                     <ul class="auto_sublist">
@@ -105,56 +103,79 @@
       		</ul>
     	</nav>	
 	</header>
-
+	
 	<div class="middle">
 		<div class="container">
 			<main class="content">
-					<div class="all">
-						<input checked type="radio" name="respond" id="desktop">
-							<article id="slider">
-									<input checked type="radio" name="slider" id="switch1">
-									<input type="radio" name="slider" id="switch2">
-									<input type="radio" name="slider" id="switch3">
-									<input type="radio" name="slider" id="switch4">
-									<input type="radio" name="slider" id="switch5">
-								<div id="slides">
-									<div id="overflow">
-										<div class="image">
-											<article><h2><img src="template/img/slider/slide1.jpg" alt="slide1"></h2></article>
-											<article><h2><img src="template/img/slider/slide2.jpg" alt="slide2"></h2></article>
-											<article><h2><img src="template/img/slider/slide3.jpg" alt="slide3"></h2></article>
-											<article><h2><img src="template/img/slider/slide4.jpg" alt="slide4"></h2></article>
-											<article><h2><img src="template/img/slider/slide5.jpg" alt="slide5"></h2></article>
-										</div>
-									</div>
-								</div>
-								<div id="controls">
-									<label for="switch1"></label>
-									<label for="switch2"></label>
-									<label for="switch3"></label>
-									<label for="switch4"></label>
-									<label for="switch5"></label>
-								</div>
-								<div id="active">
-									<label for="switch1"></label>
-									<label for="switch2"></label>
-									<label for="switch3"></label>
-									<label for="switch4"></label>
-									<label for="switch5"></label>
-								</div>
-							</article>
-					</div>
-					<div class="text">
-						<p>У нас в сервисе только современное и надежное оборудование, которое позволяет добиваться высокого качества при ремонте автомобилей. А благодаря многолетнему стажу, наши сотрудники накопили огромный профессиональный опыт в своем деле. Добавьте к этому демократичные цены и удобное расположение.</p>
-						<p>Звуки нашей работы</p>
-						<audio src="template\audio\au1.mp3" controls></audio>
-						<audio src="template\audio\au2.mp3" controls></audio>
-					</div>
+					
+				<p id="caption">Прошивки для скачивания:</p>
+				<table class="table">
+					<tr>
+						<th width="">№</th><th width="">Марка</th><th width="">Модель</th><th width="">Год</th><th width="">Модуль</th><th width="">Память</th><th width="">Номер Блока</th><th width="">Файл</th>
+					</tr>
+					<tr>
+						<td><a href="source/prosh/prosh1.bin">1</a></td>
+						<td>Nissan</td>
+						<td>Laurel</td>
+						<td>2000</td>
+						<td>Dash</td>
+						<td>S130</td>
+						<td><div>8L022<br/>217-470<br/>24810<br/>MT</div></td>
+						<td class="ref"><a href="source/prosh/prosh1.bin">Eeprom</a></td>
+					</tr>
+					<tr>
+						<td><a href="source/prosh/prosh2.bin">2</a></td>
+						<td>Nissan</td>
+						<td>Laurel</td>
+						<td>1999</td>
+						<td>Dash</td>
+						<td>S130</td>
+						<td><div>8L020<br/>217-450<br/>24810<br/>MR</div></td>
+						<td class="ref"><a href="source/prosh/prosh2.bin">Eeprom</a></td>
+					</tr>
+					<tr> 
+						<td><a href="source/prosh/prosh3.bin">3</a></td>
+						<td>Volvo</td>
+						<td>V70</td>
+						<td>1997</td>
+						<td>Dash</td>
+						<td>S220</td>
+						<td><div>9148926<br/>69794-660T</div></td>
+						<td class="ref"><a href="source/prosh/prosh3.bin">Eeprom</a></td>
+					</tr>
+					<tr>
+						<td><a href="source/prosh/prosh4.bin">4</a></td>
+						<td>Volvo</td>
+						<td>S60</td>
+						<td>2000</td>
+						<td>Dash</td>
+						<td>MC68HC912D60</td>
+						<td><div>VCC P/No 9499668<br/>S/No 14615<br/>YZK P/No 69294-570T</div></td>
+						<td class="ref"><a href="source/prosh/prosh4.bin">Eeprom</a></td>
+					</tr>
+					<tr>
+						<td><a href="source/prosh/prosh5.bin">5</a></td>
+						<td>Ford</td>
+						<td>Focus</td>
+						<td>2007</td>
+						<td>Dash</td>
+						<td>MC9S12H256</td>
+						<td><div>FPN: 7M5T-10849-JB<br/>NVM:01 ROM:27-Nov-06<br/>TestSW:1.00</div></td>
+						<td class="ref"><a href="source/prosh/prosh5.bin">Flash</a></td>
+					</tr>					
+
+					
+					
+					
+				
+				</table>
+				<p id="add">Таблица будет добавляться со временем</p>
+					
+					
 			</main>
 		</div>
 
 		<aside class="left-sidebar">
-			
             <div class="left">
                 <div class="left_block">
 					<div class="left_block_inside">
@@ -166,8 +187,6 @@
 						<div class="left_normal"><a href="#">Полезная информация</a></div>
 					</div>
 				</div>
-            
-            
                 <div class="left_box">
 					<div class="left_ban_box">
 						<img src="template/img/ads/emp1.jpg" alt="Баннер"/>
@@ -175,11 +194,8 @@
 					</div>
                 </div>
         	</div>
-            
-            
 		</aside>
 	</div>
-
 </div>
 
 <footer class="footer">
@@ -191,7 +207,6 @@
 				<div class="logo_name_info">Оборудование, диагностика, ремонт дизельных систем</div>
 				<div class="logo_name_name">
 				<a href="index.html">Мини Авто Сервис</a></div>
-
 			</div>
 			<div class="contact">
 				<div class="contact_tel"><span class="contact_icon_tel">

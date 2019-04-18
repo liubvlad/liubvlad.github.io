@@ -1,6 +1,7 @@
 .galery{
 	display: flex;
-	justify-content: center;	
+	justify-content: center;
+margin-bottom: 15px;	
 }
 .galery_list{
 	width: 100%;
@@ -12,7 +13,26 @@
 }
 
 iframe{
-	width: 30%;
-	height: 100%;
-	margin: 1.5%;
+	width: 31%;
+	min-height: 200px;
+	margin: 1%;
 }
+video{
+	width: 93%;
+	height: auto;
+	margin-left: 2%;
+}
+
+.content p{
+	font-size: 14pt;
+	padding: 10px 0;
+}
+.content p:first-child{
+	color: red;
+	
+	font-size: 28pt;
+	font-weigh: bold;
+}
+strong{
+	font-weigh: bold;
+}	
