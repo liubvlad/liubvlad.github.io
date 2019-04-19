@@ -1,8 +1,12 @@
 div.all{
 	margin-bottom: 50px;
 }
+.content{
+	padding-bottom: 40px;
+}
 .text{
 	padding: 0 15px;
+	
 }
 audio{
 	width: 70%;
@@ -161,6 +165,6 @@ p{
 		padding: 0 5px;
 	}
 	.text p{
-	font-size: 10pt;
+	font-size: 14pt;
 }
 }

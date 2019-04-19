@@ -39,16 +39,16 @@
 			</div>
 		</div>
 		<div class="line2"></div>
-		<img class="car_img" src="template/img/car.gif" width="100%" height="20px">
+		<img class="car_img" src="template/img/car.gif">
         <div class="line2"></div>
 		<nav class="nav">
           	<ul class="nav_list">        
                 <li><a class="normal" href="index.html">Главная</a></li>
-                <li><a class="normal" href="about.html">О нас</a></li>
                 <li><a class="normal" href="services.html">Услуги</a></li>
+                <li><a class="normal" href="equipment.html">Оборудование</a></li>
                 <li><a class="normal" href="prosh.html">Прошивки</a></li>
                 <li><a class="normal" href="programms.html">Программы</a></li>
-                <li class="auto"><a href="auto.html" class="normal">Автомобили</a>
+                <li class="auto"><a href="auto.html" class="active">Автомобили</a>
                     <ul class="auto_sublist">
                       <li>
 						<a href="auto.html">марка1</a>
@@ -109,10 +109,58 @@
 	<div class="middle">
 		<div class="container">
 			<main class="content">
-					
-					
-					
-					
+			<form>
+				<table>
+		<caption><h1><u>Введите информацию о автомобиле</u></h1></caption>
+		<tr><td class="inf">Марка</td>				<td><input class="put" name="brand" type="text" size="20" maxlength="20" value=""/></td></tr>
+		<tr><td class="inf">Модель</td>				<td><input class="put" name="model" type="text" size="24" maxlength="24" value=""/></td></tr>
+		
+		<tr><td class="inf">Год авто</td>			<td>  	<select name="studies"  aria-required="true" size = "1">
+																<option value="" selected disabled>Выберите год</option>
+																<option>2019</option>
+																<option>2018</option>
+																<option>2017</option>
+																<option>2016</option>
+																<option>2015</option>
+																<option>2014</option>
+																<option>2013</option>
+																<option>2012</option>
+																<option>2011</option>
+																<option>2010</option>
+																<option>2009</option>
+																<option>2008</option>
+																<option>2007</option>
+																<option>2006</option>
+               													<option>2005</option>
+																<option>2004</option>
+																<option>2003</option>
+																<option>2002</option>
+																<option>2001</option>
+																<option>2000</option>
+																<option>1999</option>
+																<option>1998</option>
+																<option>1997</option>
+																<option>1996</option>
+																<option>1995</option>
+																<option>1994</option>
+																<option>1993</option>
+																<option>1992</option>
+																<option>1991</option>
+																<option>1990</option>
+													</td>									
+		</tr>
+		<tr><td class="inf">Коробка передач</td>	<td>  	<font><input type="radio" name="typebox" value="mech" checked>Механика</font>
+															<font><input type="radio" name="typebox" value="auto">Автомат</font>
+													</td>
+		</tr>
+		<tr><td class="inf">Транспорт на ходу</td>	<td>  	<font><input type="radio" name="available" value="Yes" checked>Да</font>
+															<font><input type="radio" name="available" value="No">Нет</font>
+													</td>
+		</tr>
+		<tr><td class="inf">Примичание</td>			<td>  	<textarea class="put" name="comment" id="comment" cols="32" rows="8"></textarea></td></tr>
+		<tr><td class="inf"></td>					<td>  	<input class="send" type="submit" name="send" value="Отправить"> <input class="reset" type="reset" name="reset" value="Сброс"></td></tr>
+		</table>
+			</form>
 			</main>
 		</div>
 
@@ -121,12 +169,12 @@
             <div class="left">
                 <div class="left_block">
 					<div class="left_block_inside">
-						<div class="left_normal"><a href="#">Стенды</a></div>
-						<div class="left_normal"><a href="#">Оборудование</a></div>
-						<div class="left_normal"><a href="#">Приспособления и комплектующие</a></div>
-						<div class="left_normal"><a href="#">Новинки</a></div>
-						<div class="left_normal"><a href="#">Программное обеспечение</a></div>
-						<div class="left_normal"><a href="#">Полезная информация</a></div>
+						<div class="left_normal"><a href="#">Элемент списка 1</a></div>
+						<div class="left_normal"><a href="#">Элемент списка 2</a></div>
+						<div class="left_normal"><a href="#">Элемент списка 3</a></div>
+						<div class="left_normal"><a href="#">Элемент списка 4</a></div>
+						<div class="left_normal"><a href="#">Элемент списка 5</a></div>
+						<div class="left_normal"><a href="#">Элемент списка 6</a></div>
 					</div>
 				</div>
             

@@ -1,0 +1,71 @@
+table{
+	margin-left: auto;
+	margin-right: auto;
+}
+caption{
+	font-size:24pt;
+	color:black;
+	text-align:left;
+}
+font{
+	color:black;
+	font-size:13pt
+}
+
+p{
+	color:black;
+}
+.put{
+	width:405px;
+	background: #99c8ef;
+}
+select{
+	font-size: 18px;
+}
+table td{
+	text-align:left;
+	padding-top:20px;
+}
+table td.inf{
+	color: #0765B3;
+	text-align:right;
+	font-weight: bold;
+	font-size: 16px;
+	width:150px;
+	vertical-align:top;
+	padding-right:7px;
+}
+			
+.send{
+	font-weight: bold;
+	font-size: 14px;
+	color: #FFF;
+	background: linear-gradient(to bottom, #60aff1, #aed5f5);
+	width:150px;
+	height:40px;
+}
+.send:hover{
+	background: linear-gradient(to bottom, #aed5f5, #60aff1);
+}
+.reset{
+	font-weight: bold;
+	font-size: 14px;
+	color: #FFF;
+	margin-left: 20px;
+	background: linear-gradient(to bottom, #aed5f5, #60aff1);
+	width:150px;
+	height:40px;
+}
+.reset:hover{
+	background: linear-gradient(to bottom, #60aff1, #aed5f5);
+}
+input{
+	border-radius:4px;
+	color:black;
+}
+textarea{
+	border-radius:4px;
+	color:black;
+	resize: none;
+	overflow-y: none;
+}
