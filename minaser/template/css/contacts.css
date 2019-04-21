@@ -1,0 +1,42 @@
+.content table.row  {
+	width:  100%; /* Ширина таблицы */
+	border-spacing: 0; /* Расстояние между ячейками */
+}
+.content table.row td {
+	width: 50%; /* Ширина ячеек */
+	vertical-align: top; /* Выравнивание по верхнему краю */
+}
+.content td.toright { /* Правая ячейка */ 
+	text-align: right; /* Выравнивание по правому краю */
+	font-size: 18pt;
+}
+.content .row{
+	font-size: 22pt;	
+	border-top: 2px solid #0765B3;
+	margin-bottom: 25px;
+	padding-top: 25px;
+}
+.content .text table.row:first-child{
+	border-top: none;
+}
+.content #name{
+	font-size: 24pt;
+	color: black;
+	font-weight: bold;	
+	text-align: center;
+}
+
+.content div.text{
+	width: 70%;
+	margin: 0 auto;
+}
+.content div.map{
+	padding-top: 15px;
+	width: 90%;
+	margin: 0 auto;
+}
+.content .map iframe{
+	width: 100%;
+	height: 480px;
+	border: 5px solid #0765B3;
+}
