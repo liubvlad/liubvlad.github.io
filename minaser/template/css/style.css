@@ -275,7 +275,7 @@ a.active:hover{
 .middle {
 	min-height: 740px;
 	margin-top: 20px;
-	padding: 0 0 100px;
+	padding: 0 0 140px;
 	position: relative;
 	width: 100%;
 }
@@ -346,7 +346,7 @@ a.active:hover{
 
 /*Footer start*/
 .footer {
-	margin: -100px auto 0 auto;
+	margin: -140px auto 0 auto;
 	min-width: 1024px;
 	max-width: 1600px;
 	height: 140px;
@@ -560,11 +560,11 @@ body{
 		width: 100%;
 	}
 	li.auto > a{
-		pointer-events: none;
+		/*pointer-events: none;*/
 		cursor: default;
 	}
 	li.auto > ul.auto_sublist > li > a{
-		pointer-events: none;
+		/*pointer-events: none;*/
 		cursor: default;
 	}
 	/*submenu start*/
@@ -618,7 +618,6 @@ body{
 	}
 	/*nav end*/
 	
-
 	.container {
 	float: none;
 	}
@@ -627,10 +626,6 @@ body{
 	.content {
 	padding-left: 0px;
 	}
-	
-	
-	
-	
 
 	/*Left slider start*/
 	.left-sidebar {
@@ -639,7 +634,6 @@ body{
 		margin-left: 0;
 		position: static;
 	}
-
 	.left {
 		float: none;
 		width: 98%;
@@ -691,7 +685,6 @@ body{
 	.left_ban_box {
 		float: left;
 		width: 90%;
-		
 		background-color: #0765B3;
 		margin: 15px;
 		height: auto;

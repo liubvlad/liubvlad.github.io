@@ -1,7 +1,7 @@
 .galery{
 	display: flex;
 	justify-content: center;
-margin-bottom: 15px;	
+	margin-bottom: 15px;	
 }
 .galery_list{
 	width: 100%;
@@ -11,7 +11,6 @@ margin-bottom: 15px;
 	flex-wrap: wrap;
 	height: 100%;
 }
-
 iframe{
 	width: 31%;
 	min-height: 200px;
@@ -22,17 +21,15 @@ video{
 	height: auto;
 	margin-left: 2%;
 }
-
 .content p{
 	font-size: 14pt;
 	padding: 10px 0;
 }
 .content p:first-child{
 	color: red;
-	
 	font-size: 28pt;
-	font-weigh: bold;
+	font-weight: bold;
 }
 strong{
-	font-weigh: bold;
+	font-weight: bold;
 }	
