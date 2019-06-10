@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="3.css">
+		<title>Document</title>
+		<style>
+			body, *
+			{
+				color: #000;
+				text-decoration: none;
+			}
+			.redHover:hover { color: red; }
+			.greenHover:hover { color: green; }
+			.blueHover:hover { color: blue; }
+			.redHover::selection, .redLetter::selection
+			{
+				background-color: red;
+				color:#fff;
+			}
+			.greenHover::selection, .greenLetter::selection
+			{
+				background-color: green;
+				color:#fff;
+			}
+			.blueHover::selection, .blueLetter::selection
+			{
+				background-color: blue;
+				color:#fff;
+			}
+			.redLetter:first-letter	{color: red;}
+			.greenLetter:first-letter {color: green;}
+			.blueLetter:first-letter {color: blue;}
+			.redLetter:active { color:red; }
+			.redLetter:active:first-letter { color: #000; }
+			.greenLetter:active { color:green;}
+			.greenLetter:active:first-letter { color: #000; }
+			.blueLetter:active { color:blue; }
+			.blueLetter:active:first-letter { color: #000; }
+			input {	background: #fff; }
+			input:focus{ background: #E9D210; border-color: #EC9E07; box-shadow: 1px 1px 2px 0 #EC9E07;}
+		</style>
+	</head>
+	<body>
+		<h1>Red, Green and Blue page</h1>
+		<a href="#" class="redHover">Red</a>, <a href="#" class="greenHover">Green</a> and <a href="#" class="blueHover">Blue</a>
+		<p class="redLetter">Красный (родственно ст.-слав. красьнъ красивый, прекрасный), также червлёный, рдяный (арх.) — область цветов в длинноволновой части видимого спектра, соответствует  минимальным частотам электромагнитного излучения, воспринимаемого человеческим глазом. Диапазон красных цветов в спектре часто определяют длинами волн 620—740 нанометров, что соответствует частотам 484—405 терагерц. Длинноволновая граница восприятия зависит от возраста человека.</p>
+		<p class="greenLetter">Зелёный цвет — один из трёх основных цветов, зелёным считают цвет видимого электромагнитного излучения (света) с длинами волн, лежащими в диапазоне приблизительно 500—560  нанометров. В системе CMYK в полиграфии зелёный получается при смешении жёлтого и сине-зелёного (циана).</p>
+		<p class="blueLetter">Синий — наименование группы цветов. Спектральный синий цвет ощущается человеком под действием электромагнитного излучения с длинами волн в диапазоне 440—485 нм (иногда диапазон указывают шире — 420—490 нм).</p>
+		<form>
+			Логин <input type = "text" name = "login"></input><br><br>
+			Пароль <input type = "password" name = "password"></input>
+		</form>
+	</body>
+</html>

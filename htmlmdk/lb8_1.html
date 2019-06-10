@@ -1,0 +1,143 @@
+﻿<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Оформление страниц в CSS – 4 часть</title>
+		<style>
+		
+			body{
+			background: linear-gradient(rgb(85,160,230) 0%, rgb(255,255,255)) no-repeat;
+			background-size: 100%;}
+			
+			.first{
+			background-color: white;
+			border: solid;
+			border-width: 1px;
+			border-color: white;
+			display:inline-block;
+			margin:5% 20% 5% 20%;
+			width: 968px;
+			height:650px;}
+			
+			.left{
+			float: left;
+			width: 280px;
+			margin-right: auto;
+			margin-left: auto;
+			display: block;
+			overflow:hidden;
+			position: relative;}
+			
+			.textin {
+			position: absolute;
+			line-height: 1.5;
+			font-size: 18px;}
+			
+			h4{
+			position: absolute;}
+			
+			.right{
+			float: right;
+			width: 600px;
+			margin-right: 15px;
+			padding-top: 0px;
+			position:relative;
+			margin-bottom:-180px;
+			margin-top:-50px;}
+	
+			.right h2 {
+			font: 24px Tahoma, Geneva, sans-serif;
+			margin-bottom: 15px;
+			font-family: Tahoma, Geneva, sans-serif;}
+
+			.right p {
+			font: 14px Tahoma, Geneva, sans-serif;
+			color: #323A3F;
+			margin-bottom: 20px;
+			font-family: Tahoma, Geneva, sans-serif;}
+			
+			.copyright{
+			clear: both;
+			font: bold 12px Tahoma, Geneva, sans-serif;
+			color: #65747E;
+			border-top: 1px dotted #98AFBE;
+			border-left: none;
+			border-right: none;
+			padding-top:10px;}
+
+			.photo{
+			margin-right: auto;
+			margin-left: auto;
+			overflow:hidden;}
+
+			.hand{
+			z-index: 1;
+			position:relative;}
+			
+			span{
+			font-size:25px;}
+			
+			.top{
+			position:relative;}
+
+			.auto-style1 {
+			margin-top: 0px;}
+			
+			.end{
+			margin-top: -15px;}
+			
+
+		</style>
+	</head>
+		
+	<body>
+		
+
+		<div class="first">
+		<img class="hand" src ="files/lb8/8.png" alt="" style="left: 90px; top: -59px" width="262">
+		<h1 class="top" style="left: 676px; top: -212px; width: 300px">Большая книга CSS</h1>
+			<div class="left" style="left: 3px; top: -92px; width: 352px; height: 373px;">
+				<img class="photo" src="files/lb8/8.1.png" width="335" height="365" alt="">
+				<h4 class="auto-style1" style="left: 69px; top: 55px; width: 204px; height: 38px"><span>УВЕДОМЛЕНИЯ</span></h4>
+				<p class="textin" style="left: 54px; top: 74px; height: 219px; width: 234px;">•Lorem Ipsum Dolor Sat<br/>
+				•Quis nostrum exercitationem ullam<br/>
+				•Eius modi tempora incidunt<br/> 
+				•Quis autem vel eum iure <br/>
+				•Sed quia non numquam eius modi tempora incidu<br/>
+				•Nemo enim ipsam voluptate</p>
+			</div>
+			
+			<div class="right" style="left: 4px; top: -158px; height: 557px;">
+				<h2>Lorem Ipsum Dolor Sat</h2>
+				<hr class="end" color="#CAD6E4" size ="2px">
+				<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, 
+				totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt 
+				explicabo.</p>
+				<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni 
+				dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor 
+				sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore 
+				magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis 
+				suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?</p>
+				<p>Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel 
+				ilium qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+				<h2>Nisi Ut Aliquid</h2>
+				<hr class="end" color="#CAD6E4" size ="2px">
+				<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem 
+				aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. 
+				Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni 
+				dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor 
+				sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore 
+				magnam aliquam quaerat voluptatem.</p>
+				<p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid 
+				ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil 
+				molestiae consequatur, vel ilium qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+
+			</div>
+			
+			<p class ="copyright">СОБСТВЕННОСТЬ 2015, COSMOFARMER.COM</p>
+			
+		</div>
+				<a href = "index.html"><p align = "right">Назад</p></a>
+
+	</body>
+
+</html>

@@ -1,0 +1,23 @@
+*, body{
+	margin: 0;
+	padding: 0;
+	position: 0;
+}
+.wrapper
+{
+	height: 200px;
+	background: #2E2E2E;	
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: center;	
+	align-items: center;	
+}
+.text{
+	color: #fff;	
+	text-transform: uppercase;	
+	list-style-type: none;
+	font-size: 32px;
+	font-weight: bold;
+	font-family: Arial;
+	text-align: center;
+}

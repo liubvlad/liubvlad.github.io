@@ -1,0 +1,85 @@
+﻿<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Оформление страниц в CSS – 8 часть</title>
+		<style>
+			body{
+			background-color:#003068;
+			background-size: 100%; 
+			margin: 10px 0 0 0;}
+			
+			table{
+			margin-left: auto;
+			margin-right: auto;}
+			
+			caption{
+			border-bottom: 1px white dotted;
+			font-size:30px;
+			color:white;
+			text-align:left;}
+			
+			font{color:white;}
+			
+			p{color:white;}
+			
+			.put{
+			width:405px;
+			background:#739ab4;}
+			
+			select{font-size: 18px;}
+			
+			table td{
+			text-align:left;
+			padding-top:20px;}
+						
+			table td.inf{
+			color:#739ab4;
+			text-align:right;
+			font-weight: bold;
+			width:150px;
+			vertical-align:top;
+			padding-right:7px;}
+			
+			.send{
+			background: linear-gradient(to bottom, #004678, #5586a6);
+			width:150px;
+			height:40px;}
+			
+			.send:hover{background: linear-gradient(to bottom, #5586a6, #004678);}
+			
+			input{
+			border-radius:4px;
+			height:24px;
+			color:white;}
+			
+			textarea{
+			border-radius:4px;
+			color:white;
+			resize: none;
+			overflow-y: scroll}	
+		</style>
+	</head>
+	<body>
+		<form>
+		<table>
+		<caption>Регистрация подписчика</caption>
+		<tr>	<td class="inf">Как вас зовут?</td>							<td>  	<input class="put" name="login" type="text" size="25" maxlength="30" value=""/></td>	</tr>
+		<tr>	<td class="inf">Ваш адрес электронной почты</td>			<td>  	<input class="put" name="login" type="text" size="25" maxlength="30" value=""/></td>	</tr>
+		<tr>	<td class="inf">Навыки <br/>квартирного <br/>ремонта</td>	<td>  	<font><input type="radio" name="Rb" value="V1" checked>Новичок</font>
+																					<font><input type="radio" name="Rb" value="V2">Опытный</font>
+																					<font><input type="radio" name="Rb" value="V3">Профи</font></td>						</tr>
+		<tr>	<td class="inf">Откуда вы узнали о нас?</td>				<td>  	<select name="studies"  aria-required="true" size = "1">
+																						<option value="" selected disabled>Выберите вариант</option>
+																						<option value="1">В интернете</option>
+																						<option value="2">На работе</option>
+               																			<option value="3">От друзей</option>
+               																			<option value="4">В газетах</option>
+																						<option value="5">В соц. сетях</option>
+               																			<option value="6">Реклама</option></select></td>									</tr>
+		<tr>	<td class="inf">Дополнительные комментарии</td>				<td>  	<textarea class="put" name="comment" id="comment" cols="48" rows="8"></textarea></td>	</tr>
+		<tr>	<td class="inf"></td>										<td>  	<input class="send" type = "submit" name = "1" value = "Подписаться"></td>				</tr>
+		</table>
+		</form>			
+		<a href = "index.html"><p align = "right">Назад</p></a>	
+	</body>
+</html>

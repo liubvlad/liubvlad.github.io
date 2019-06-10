@@ -1,0 +1,40 @@
+*, body{
+	margin: 0;
+	padding: 0;
+	position: 0;
+}
+.wrap{    
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: stretch;   
+	align-content: stretch;     
+	margin: 0 auto;
+}
+.wrap div{
+	height: 100px;     
+	width: 100%;
+	text-transform: uppercase;
+	font-family: arial;
+	color: #fff;
+	font-size: 20px; 
+	font-weight: bold;
+	text-align:center;
+	display: flex;    
+	justify-content: center;
+	align-items: center;   
+	align-content: center;
+}
+.bl1{ background: #222; order: 1;}
+.bl2{ background: #aaa; order: 3;}
+.bl3{ background: #ddd; order: 2;}
+.bl4{ background: #888; order: 4;}
+.bl5{ background: #555; order: 5;}
+@media (min-width: 480px) {
+	.wrap div{ height: 150px; width: auto;}
+	.bl1{ flex: 3 1 100%; }
+	.bl2{ flex: 1 1 24%; order: 2;}
+	.bl3{ flex: 0 0 52%; order: 3; }
+	.bl4{ flex: 1 1 24%; }
+	.bl5{ flex: 3 1 100%; }
+}

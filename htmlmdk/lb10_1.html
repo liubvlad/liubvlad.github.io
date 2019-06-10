@@ -1,0 +1,96 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+	<title>Оформление страниц в CSS – 7 часть</title>
+	<style>
+		body{
+		background-color: #fdfcd5;
+		background-size: 100%; 
+		margin: 10px 0 0 0;}
+		
+		.tab{
+		color: #008848;
+		text-decoration: underline;
+		font-family: Avantgarde;
+		font-style: oblique;
+		text-align: left;
+		font-size: 35px;
+		margin: auto;
+		margin-bottom: 25px;}
+				
+		caption{
+		text-align:right;
+		padding-bottom:7px;}
+		
+		table{
+		border-collapse:collapse;
+		margin:auto;
+		min-width: 420px;}
+		
+		table th{
+		text-align:left;
+		background:#f64400;
+		color:white;
+		padding:4px 0 4px 10px;
+		border: 1px #C1B270 solid;}
+		
+		table th{
+		text-transform: uppercase;}
+		
+		table td{
+		border: 1px #C1B270 solid;
+		font-weight:bold;}
+		
+		table tr.first{
+		background:#fdfcd5;}
+		
+		table tr.second{
+		background:#ffecbe;}
+		
+		table tr.first:hover{
+		background:#dedbc3;}
+		
+		table tr.second:hover{
+		background:#dcd1b4;}
+		
+		table td.product{
+		width:360px;
+		padding-left:10px;}
+		table td.price{
+		width:80px;
+		padding-left:10px;}
+			
+		table td.star{
+		color:#F34900;
+		font-size:20px;
+		width:100px;
+		height:30px;
+		padding-left:10px;}
+
+		table td.star:hover{
+		color:#e7ca48;}
+	</style>		
+</head>
+<body>
+	<div>
+	<table>
+    <caption class="tab">Добро пожаловать в наш магазин</caption>
+	<caption>Таблица 1: Текущий инвентарь вин</caption>
+		<tr>				<th>Товар</th>							<th>Цена</th>						<th>Рейтинг</th>				</tr>
+		<tr class="first">	<td class="product">Double Magnum</td>	<td class="price">1200 ₽</td>		<td class="star">★★★★★</td>	</tr>
+		<tr class="second">	<td class="product">Jeroboam</td>		<td class="price">850 ₽</td>		<td class="star">★★★</td>		</tr>
+		<tr class="first">	<td class="product">Rehoboam</td>		<td class="price">Бесценно</td>		<td class="star">★★★★★</td>	</tr>
+		<tr class="second">	<td class="product">Imperial</td>		<td class="price">1800 ₽</td>		<td class="star">★★</td>		</tr>
+		<tr class="first">	<td class="product">Balthazar</td>		<td class="price">4500 ₽</td>		<td class="star">★★★</td>		</tr>
+		<tr class="second">	<td class="product">Salmanazar</td>		<td class="price">4900 ₽</td>		<td class="star">★</td>			</tr>
+		<tr class="first">	<td class="product">Sovereign</td>		<td class="price">120 ₽</td>		<td class="star">★★★★</td>		</tr>
+		<tr class="second">	<td class="product">Primat </td>		<td class="price">1100 ₽</td>		<td class="star">★★★★</td>		</tr>
+		<tr class="first">	<td class="product">Midas</td>			<td class="price">2600 ₽</td>		<td class="star">★★★★★</td>	</tr>
+		</table>
+	
+		<a href = "index.html"><p align = "right">Назад</p></a>	
+        </div>
+
+	</body>
+
+</html>
