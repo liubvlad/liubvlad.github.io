@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>my mqtt web client</title>
+	<link href="css/style.css" rel="stylesheet">
+
+</head>
+<body>
+
+<p id="connectionStatus">status</p>
+<div class="wrapper">
+	<div class="wrapper-center">
+		<div class="forma">
+			<div class="forma-padding">
+				<div class="forma-content">
+					<div class="text">
+						<p>Подключение</p>
+						<button id="connectButton" type="button" class="btn-default" onclick="connectionToggle();" >Connect</button>
+						<button id="publishButton" type="button" class="btn-default" onclick="publish('ESP_1/TXT', 'PC-CON', 0, false);" disabled>Publish</button>
+
+						<button id="subAllButton" type="button" class="btn-default" onclick="subscribeALL();" >Sub #</button>
+
+						
+					</div>
+					<div class="text">
+						<p>Активность светодиода</p>
+						<input type="checkbox" id="Led" onclick="_ledClicked();" /> Led <br>
+
+					</div>
+					<div class="text">
+						<p>Выбор цвета</p>
+						COLORPICKER <br>
+						<div id="R">
+							R:0
+						</div>
+						<div id="G">
+							G:0
+						</div>
+						<div id="B">
+							B:0
+						</div>
+						
+					</div>
+					<div class="text">
+						<p>Режим свечения</p>
+						<select id="Mode" onchange="_modeChange();">
+						  <option value="0">All off</option>
+						  <option value="1">All color</option>
+						  <option value="2">Half color</option>
+						  <option value="3">Thrid color</option>
+						  <option value="4">Rainbow</option>
+						</select>
+						
+					</div>
+					<div class="text">
+						<p>Состояние кнопки</p>
+						<div id="But" class="butStateOFF">
+							OFF
+						</div>
+						
+					</div>
+
+					<div class="text">
+						<p>Светодидное кольцо</p>
+						Coming soon<br>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</div>
+
+<!-- скрипт WebSocket MQTT клиента-->
+<script src="js/paho-mqtt.js"></script>
+
+<!-- скрипт для этой страницы -->
+<script src="js/script.js"></script>
+ 
+	
+</body>
+</html>
