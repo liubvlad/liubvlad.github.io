@@ -1,10 +1,10 @@
-let ledsCount = 24;
+﻿let ledsCount = 24;
 let $LEDS = [];
 for (var i = 0; i < ledsCount; i++) {
   $LEDS[i] = document.getElementById('led' + i);
 }
 let 
-  color = "#FFDB00",
+  color = "#000000",
   mode = "off";
 clearLeds();
 
@@ -42,7 +42,6 @@ function animateLedRing() {
   }
 }
 
-
 function clearLeds() {
   for (var i = 0; i < ledsCount; i++) {
     setLed(i, "#000");}
@@ -54,4 +53,3 @@ function setJustOneLed(id, color) {
   clearLeds();
   setLed(id, color);
 }
-
