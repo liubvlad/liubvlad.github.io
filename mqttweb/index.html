@@ -2,93 +2,86 @@
 <html>
 <head>
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>MQTT Web Client</title>
-	
-	<link href="css/style.css" rel="stylesheet">
-
-	<!-- Цветовыборка -->
+	<link rel="stylesheet" href="css/index.css" rel="stylesheet" />
 	<link rel="stylesheet" href="css/colorpicker.css" type="text/css" />
+	<link rel="stylesheet" href="css/ledRing.css" />
 	<script type="text/javascript" src="js/colorpicker/jquery.js"></script>
 	<script type="text/javascript" src="js/colorpicker/colorpicker.js"></script>
     <script type="text/javascript" src="js/colorpicker/eye.js"></script>
     <script type="text/javascript" src="js/colorpicker/layout.js?ver=1.0.2"></script>
-	<!--  -->
-
-	<!-- Светодиодное кольцо -->
-	<meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="./css/ledRing.css">
-
-
+	
 </head>
 <body>
-
-
-<div class="wrapper">
-	<div class="wrapper-center">
-		<div class="forma">
-			<div class="forma-padding">
-				<div class="forma-content">
-					<div class="text">
-						<p>Подключение</p>
-						<p id="connectionStatus"></p>
-						<button id="connectButton" type="button" class="btn-default" onclick="connectionToggle();" >Connect</button>
-					</div>
-					<div id="APP">
+	<div class="wrapper">
+		<div class="wrapper-center">
+			<div class="forma">
+				<div class="forma-padding">
+					<div class="forma-content">
 						<div class="text">
-							<p>Активность светодиода</p>
-							<input type="checkbox" id="Led" onclick="_ledClicked();" /> Состояние светодиода <br>
+							<p>Connect</p>
+							<p id="connectionStatus"></p>
+							<button id="connectButton" type="button" class="btn-default" onclick="connectionToggle();" >Connect</button>
 						</div>
-						<div class="text">
-							<p>Выбор цвета</p>
-							<div id="colorpickerHolder"></div>
-						</div>
-						<div class="text">
-							<p>Режим свечения</p>
-							<select id="Mode" onchange="_modeChange();">
-							  <option value="0">Всё выключено</option>
-							  <option value="1">Активны все</option>
-							  <option value="2">Активны половина</option>
-							  <option value="3">Активны треть</option>
-							  <option value="4">Радуга</option>
-							</select>
-						</div>
-						<div class="text">
-							<p>Состояние кнопки</p>
-							<div id="But" class="butStateOFF">
-								OFF
+						<div id="app">
+							<div class="text">
+								<p>Led activity</p>
+								<input type="checkbox" id="Led" onclick="ledClicked();" /> Led state <br>
 							</div>
-						</div>
-						<div class="text">
-							<p>Светодидное кольцо</p>
-							<div id="LedRing">
-							  <svg viewBox="0 0 300 300">
-								<circle id="bigring" cx="150" cy="150" r="150" fill="#aaa" />
-								<circle id="smallring" cx="150" cy="150" r="128" fill="#889BD3" />	
-
-								<circle id="led0" cx="150" cy="11" r="11" fill="#fff" />	
-								<circle id="led1" cx="188.13" cy="16.92" r="11" fill="#fff" />
-								<circle id="led2" cx="224.66" cy="32.7" r="11" fill="#fff" />
-								<circle id="led3" cx="251" cy="54.5" r="11" fill="#fff" />
-								<circle id="led4" cx="271.05" cy="83.45" r="11" fill="#fff" />
-								<circle id="led5" cx="285.84" cy="117.38" r="11" fill="#fff" />
-								<circle id="led6" cx="289.1" cy="150" r="11" fill="#fff" />
-								<circle id="led7" cx="284.34" cy="189.01" r="11" fill="#fff" />
-								<circle id="led8" cx="270.55" cy="219.63" r="11" fill="#fff" />
-								<circle id="led9" cx="249.25" cy="247.75" r="11" fill="#fff" />
-								<circle id="led10" cx="219.69" cy="270.55" r="11" fill="#fff" />
-								<circle id="led11" cx="185.74" cy="284.46" r="11" fill="#fff" />
-								<circle id="led12" cx="150" cy="289.1" r="11" fill="#fff" />
-								<circle id="led13" cx="117.84" cy="285.59" r="11" fill="#fff" />
-								<circle id="led14" cx="85.68" cy="273.56" r="11" fill="#fff" />
-								<circle id="led15" cx="53" cy="250" r="11" fill="#fff" />
-								<circle id="led16" cx="29.95" cy="219.94" r="11" fill="#fff" />
-								<circle id="led17" cx="15.41" cy="185.5" r="11" fill="#fff" />
-								<circle id="led18" cx="11" cy="150" r="11" fill="#fff" />
-								<circle id="led19" cx="15.41" cy="114.5" r="11" fill="#fff" />
-								<circle id="led20" cx="28.77" cy="83.45" r="11" fill="#fff" />
-							  	<circle id="led21" cx="45.74" cy="56.9" r="11" fill="#fff" />
-								<circle id="led22" cx="74.59" cy="32.7" r="11" fill="#fff" />
-								<circle id="led23" cx="112.3" cy="16.92" r="11" fill="#fff" />
-							  </svg>
+							<div class="text">
+								<p>Choose color</p>
+								<div id="colorpickerHolder"></div>
+								<p class="text-info">Explanation: The darker the color, the less bright the LEDs</p>
+							</div>
+							<div class="text">
+								<p>Led light mode</p>
+								<select id="mode" onchange="ModeChange();">
+								  <option value="0">All off</option>
+								  <option value="1">All on</option>
+								  <option value="2">Half on</option>
+								  <option value="3">Thrid on</option>
+								  <option value="4">Rainbow</option>
+								</select>
+							</div>
+							<div class="text">
+								<p>Button state</p>
+								<div id="but" class="butStateOFF">
+									OFF
+								</div>
+							</div>
+							<div class="text">
+								<p>Led ring</p>
+								<div id="ledRing">
+								  <svg viewBox="0 0 300 300">
+									<circle id="bigring" cx="150" cy="150" r="150" fill="#aaa" />
+									<circle id="smallring" cx="150" cy="150" r="128" fill="#889BD3" />	
+									<circle id="led0" cx="150" cy="11" r="11" fill="#fff" />	
+									<circle id="led1" cx="188.13" cy="16.92" r="11" fill="#fff" />
+									<circle id="led2" cx="224.66" cy="32.7" r="11" fill="#fff" />
+									<circle id="led3" cx="251" cy="54.5" r="11" fill="#fff" />
+									<circle id="led4" cx="271.05" cy="83.45" r="11" fill="#fff" />
+									<circle id="led5" cx="285.84" cy="117.38" r="11" fill="#fff" />
+									<circle id="led6" cx="289.1" cy="150" r="11" fill="#fff" />
+									<circle id="led7" cx="284.34" cy="189.01" r="11" fill="#fff" />
+									<circle id="led8" cx="270.55" cy="219.63" r="11" fill="#fff" />
+									<circle id="led9" cx="249.25" cy="247.75" r="11" fill="#fff" />
+									<circle id="led10" cx="219.69" cy="270.55" r="11" fill="#fff" />
+									<circle id="led11" cx="185.74" cy="284.46" r="11" fill="#fff" />
+									<circle id="led12" cx="150" cy="289.1" r="11" fill="#fff" />
+									<circle id="led13" cx="117.84" cy="285.59" r="11" fill="#fff" />
+									<circle id="led14" cx="85.68" cy="273.56" r="11" fill="#fff" />
+									<circle id="led15" cx="53" cy="250" r="11" fill="#fff" />
+									<circle id="led16" cx="29.95" cy="219.94" r="11" fill="#fff" />
+									<circle id="led17" cx="15.41" cy="185.5" r="11" fill="#fff" />
+									<circle id="led18" cx="11" cy="150" r="11" fill="#fff" />
+									<circle id="led19" cx="15.41" cy="114.5" r="11" fill="#fff" />
+									<circle id="led20" cx="28.77" cy="83.45" r="11" fill="#fff" />
+								  	<circle id="led21" cx="45.74" cy="56.9" r="11" fill="#fff" />
+									<circle id="led22" cx="74.59" cy="32.7" r="11" fill="#fff" />
+									<circle id="led23" cx="112.3" cy="16.92" r="11" fill="#fff" />
+								  </svg>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -96,15 +89,12 @@
 			</div>
 		</div>
 	</div>
-</div>
 
-<!-- скрипт WebSocket MQTT клиента-->
 <script src="js/paho-mqtt.js"></script>
 
-<!-- скрипт для светодиодного кольца -->
 <script  src="js/ledRing.js"></script>
 
-<!-- скрипт для этой страницы -->
-<script src="js/script.js"></script>	
+<script src="js/indexHandler.js"></script>	
+<script src="js/index.js"></script>	
 </body>
 </html>

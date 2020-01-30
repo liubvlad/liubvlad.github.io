@@ -1,24 +1,25 @@
-(function($){
-	var initLayout = function() {
-		$('#colorpickerHolder').ColorPicker({
+(function($)
+{
+	var initLayout = function() 
+	{
+		$('#colorpickerHolder').ColorPicker(
+		{
 			flat: true, 
-			onSubmit: function(hsb, hex, rgb) {
-				_hexClicked(hex, rgb);
+			onSubmit: function(hsb, hex, rgb) 
+			{
+				colorClicked(hex, rgb);
 			}
 		});
 	};
 	
-	var showTab = function(e) {
+	var showTab = function(e) 
+	{
 		var tabIndex = $('ul.navigationTabs a')
-							.removeClass('active')
-							.index(this);
+				.removeClass('active').index(this);
 		$(this)
-			.addClass('active')
-			.blur();
+			.addClass('active').blur();
 		$('div.tab')
-			.hide()
-				.eq(tabIndex)
-				.show();
+			.hide().eq(tabIndex).show();
 	};
 	
 	EYE.register(initLayout, 'init');
